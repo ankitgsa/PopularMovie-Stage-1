@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    tools:context=".DetailedActivity"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:paddingLeft = "20dp"
+                android:id ="@+id/title"
+                android:background="@color/colorPrimaryDark"
+                android:textSize= "35dp"
+                android:gravity = "center_vertical"
+                android:textColor="@color/colorPrimary"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight = "true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="300dp"
+                android:paddingLeft="5dp"
+                android:paddingRight = "15dp"
+                android:paddingTop="15dp"
+                android:paddingBottom = "15dp"
+                android:id = "@+id/poster"
+                android:layout_below="@+id/title"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft = "0dp"
+                android:paddingRight = "25dp"
+                android:paddingBottom = "0dp"
+                android:id ="@+id/date"
+                android:text="DATE"
+                android:textSize= "23dp"
+                android:textStyle="italic"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_alignTop="@+id/poster"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="90dp" />" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:paddingLeft = "5dp"
+                android:paddingRight = "0dp"
+                android:paddingTop = "0dp"
+                android:paddingBottom = "5dp"
+                android:id ="@+id/overview"
+                android:textStyle="bold"
+                android:layout_marginTop="488dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/rating"
+                android:textStyle="italic"
+                android:layout_marginRight="45dp"
+                android:layout_below="@+id/date"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="54dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Ratings"
+                android:textStyle="bold"
+                android:layout_marginTop="25dp"
+                android:id="@+id/ratingLabel"
+                android:layout_below="@+id/date"
+                android:layout_toEndOf="@+id/poster"
+                android:layout_marginStart="40dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Overview"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/overviewLabel"
+                android:layout_marginTop="453dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Release Date"
+                android:padding="3dp"
+                android:layout_marginLeft="219dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="215dp" />
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>
